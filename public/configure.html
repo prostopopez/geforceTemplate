@@ -1,0 +1,1110 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Изменение конфигурации</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://jqueryui.com//resources/demos/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    
+  </head>
+  <body>
+    <header class="fnv-header">
+    <div class="fnv-cont">
+        <div class="fnv-logoBlock">
+            <a href="./index.html">Serious pc</a>
+        </div>
+        <div class="fnv-mainMenu">
+            <nav>
+                <ul>
+                    <li><a href="./index.html#models">Модели</a></li>
+                    <li><a href="./index.html#periphery">Периферия</a></li>
+                    <li><a href="./index.html#stock">Акции</a></li>
+                    <li><a href="./index.html#news">Новости</a></li>
+                    <li><a href="./index.html#contacts">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="fnv-rightHeaderPart">
+            <div class="fnv-headerSearch fnv-inactive">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35.997" height="36.004" viewBox="0 0 35.997 36.004">
+                        <path
+                                d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="fnv-headerBasket">
+                <a href="./basket.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40.5" height="36" viewBox="0 0 40.5 36">
+                        <path
+                                d="M37.133,21.186,40.457,6.561A1.688,1.688,0,0,0,38.812,4.5H11.194L10.55,1.349A1.687,1.687,0,0,0,8.9,0H1.688A1.687,1.687,0,0,0,0,1.688V2.813A1.687,1.687,0,0,0,1.688,4.5H6.6L11.54,28.648a3.938,3.938,0,1,0,4.714.6H31a3.936,3.936,0,1,0,4.472-.732l.388-1.707a1.688,1.688,0,0,0-1.646-2.061H15.336l-.46-2.25H35.488A1.687,1.687,0,0,0,37.133,21.186Z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="fnv-headerMapMarker">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16.278" height="21.704" viewBox="0 0 16.278 21.704">
+                    <path
+                            d="M7.3,21.266C1.143,12.337,0,11.42,0,8.139a8.139,8.139,0,0,1,16.278,0c0,3.282-1.143,4.2-7.3,13.127a1.018,1.018,0,0,1-1.673,0Zm.836-9.736A3.391,3.391,0,1,0,4.748,8.139,3.391,3.391,0,0,0,8.139,11.53Z" />
+                </svg>
+                <span>Санкт-Петербург</span>
+            </div>
+        </div>
+        <button class="fnv-mobileButtons">
+            <svg class="fnv-closed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.7 12.2" id="hamburger">
+                <path d="M13.8,1.9H0.9C0.4,1.9,0,1.5,0,0.9v0C0,0.4,0.4,0,0.9,0h12.8
+                    c0.5,0,0.9,0.4,0.9,0.9v0C14.7,1.5,14.3,1.9,13.8,1.9z" />
+                <path d="M13.8,12.2H0.9c-0.5,0-0.9-0.4-0.9-0.9v0c0-0.5,0.4-0.9,0.9-0.9
+                    h12.8c0.5,0,0.9,0.4,0.9,0.9v0C14.7,11.7,14.3,12.2,13.8,12.2z" />
+                <path d="M13.8,7H0.9C0.4,7,0,6.5,0,6v0c0-0.5,0.4-0.9,0.9-0.9h12.8
+                    c0.5,0,0.9,0.4,0.9,0.9v0C14.7,6.5,14.3,7,13.8,7z" />
+            </svg>
+            <svg class="fnv-opened" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510" id="close">
+                <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z" />
+            </svg>
+        </button>
+    </div>
+</header>
+
+    
+<div class="fnv-configurePage fnv-pageStyle">
+    <div class="fnv-cont">
+        <div class="fnv-aboutPc">
+            <div>
+                <h4>SEKIRO 11TH GEN</h4>
+                <hr />
+                <p>
+                    Мощный компьютер от SeriousPC на базе процессора Intel Core i5-11600 и <br />
+                    видеокарты Palit GeForce RTX 3060. Отлично подойдет для решения профессиональных <br />
+                    задач и для гейминга в FullHD без компромиссов!
+                </p>
+                <hr />
+            </div>
+            <img src="./img/gamingPC/pc1.png" alt="">
+        </div>
+        <div class="fnv-config">
+            <div>
+                <h4>Комплектация</h4>
+                <hr />
+                <div class="fnv-dropdowns">
+                    <div class="fnv-dropdown fnv-ssd">
+                        <div class="fnv-dropTrigger">
+                            <div class="fnv-leftSvgs">
+                                <svg class="fnv-upDown" xmlns="http://www.w3.org/2000/svg" width="16" height="9"
+                                     viewBox="0 0 16 9">
+                                    <g transform="translate(-210 -1025)">
+                                        <path
+                                                d="M13.964,14.192,19.92,8.142a1.152,1.152,0,0,0,0-1.615,1.117,1.117,0,0,0-1.593,0l-6.749,6.854a1.155,1.155,0,0,0-.033,1.577l6.777,6.9a1.119,1.119,0,0,0,1.593,0,1.152,1.152,0,0,0,0-1.615Z"
+                                                transform="translate(203.806 1045.251) rotate(-90)" fill="#eb7d00" />
+                                    </g>
+                                </svg>
+                                <svg class="fnv-detailIcon" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                     viewBox="0 0 26 26">
+                                    <g id="ssd-icon" transform="translate(-245.5 -1016.007)">
+                                        <path id="Icon_material-storage" data-name="Icon material-storage"
+                                              d="M3,31H28V24.75H3Zm2.5-4.687H8v3.125H5.5ZM3,6v6.25H28V6Zm5,4.688H5.5V7.562H8ZM3,21.625H28v-6.25H3Zm2.5-4.687H8v3.125H5.5Z"
+                                              transform="translate(243 1010.507)"   stroke="#737373"
+                                              stroke-width="1" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="fnv-detailName">твердотельные ssd накопители</span>
+                            <span class="fnv-detailShort">1000 ГБ SSD накопитель M.2 Kingston SA2000</span>
+                            <div class="fnv-plusMinus">
+                                <button class="fnv-minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="1" viewBox="0 0 20 1">
+                                        <g transform="translate(-946 -996.5)">
+                                            <line id="Line_69" data-name="Line 69" y1="20"
+                                                  transform="translate(966 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                                <label>
+                                    <input class="fnv-detailCount" type="text" size="1" value="1" readonly>
+                                </label>
+                                <button class="fnv-plus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <g transform="translate(-1008 -987)">
+                                            <line id="Line_67" data-name="Line 67" y2="20"
+                                                  transform="translate(1018 987)" stroke-width="2" />
+                                            <line id="Line_68" data-name="Line 68" y1="20"
+                                                  transform="translate(1028 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="fnv-dropdownContent">
+                            <div class="fnv-dropdownItem">
+                                <div class="fnv-imgItem">
+                                    <img src="./img/configure/ssd1.png" alt="">
+                                </div>
+                                <div class="fnv-aboutItem">
+                                    <div class="fnv-choiceCheck">
+                                        <p>1000 ГБ SSD накопитель M.2 Kingston SA2000</p>
+                                        <button class="fnv-active">
+                                            <span>выбрано</span>
+                                            <span>-8103 ₽</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                 viewBox="0 0 22 22">
+                                                <path id="Icon_awesome-check-circle"
+                                                      data-name="Icon awesome-check-circle"
+                                                      d="M22.563,11.563a11,11,0,1,1-11-11A11,11,0,0,1,22.563,11.563ZM10.29,17.387l8.161-8.161a.71.71,0,0,0,0-1l-1-1a.71.71,0,0,0-1,0L9.788,13.874,6.681,10.767a.71.71,0,0,0-1,0l-1,1a.71.71,0,0,0,0,1l4.613,4.613a.71.71,0,0,0,1,0Z"
+                                                      transform="translate(-0.563 -0.563)" fill="#eb7d00" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                                <g id="Ellipse_10" data-name="Ellipse 10"   stroke="#eb7d00" stroke-width="1">
+                                                    <circle cx="11" cy="11" r="11" stroke="none"/>
+                                                    <circle cx="11" cy="11" r="10.5"  />
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Объём накопителя</span>
+                                        <span class="fnv-aboutTech">1000гб</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Максимальная скорость записи</span>
+                                        <span class="fnv-aboutTech">1200 Мб/с</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Максимальная скорость чтения</span>
+                                        <span class="fnv-aboutTech">3500 Мб/с</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Форм-фактор</span>
+                                        <span class="fnv-aboutTech">2280</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Тип чипов памяти</span>
+                                        <span class="fnv-aboutTech">TLC 3D NAND</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fnv-dropdownItem">
+                                <div class="fnv-imgItem">
+                                    <img src="./img/configure/ssd1.png" alt="">
+                                </div>
+                                <div class="fnv-aboutItem">
+                                    <div class="fnv-choiceCheck">
+                                        <p>2000 ГБ SSD накопитель M.2 Kingston SA2000</p>
+                                        <button>
+                                            <span>выбрано</span>
+                                            <span>+8103 ₽</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                 viewBox="0 0 22 22">
+                                                <path id="Icon_awesome-check-circle"
+                                                      data-name="Icon awesome-check-circle"
+                                                      d="M22.563,11.563a11,11,0,1,1-11-11A11,11,0,0,1,22.563,11.563ZM10.29,17.387l8.161-8.161a.71.71,0,0,0,0-1l-1-1a.71.71,0,0,0-1,0L9.788,13.874,6.681,10.767a.71.71,0,0,0-1,0l-1,1a.71.71,0,0,0,0,1l4.613,4.613a.71.71,0,0,0,1,0Z"
+                                                      transform="translate(-0.563 -0.563)" fill="#eb7d00" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                                <g id="Ellipse_10" data-name="Ellipse 10"   stroke="#eb7d00" stroke-width="1">
+                                                    <circle cx="11" cy="11" r="11" stroke="none"/>
+                                                    <circle cx="11" cy="11" r="10.5"  />
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Объём накопителя</span>
+                                        <span class="fnv-aboutTech">250гб</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Максимальная скорость записи</span>
+                                        <span class="fnv-aboutTech">1200 Мб/с</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Максимальная скорость чтения</span>
+                                        <span class="fnv-aboutTech">3500 Мб/с</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Форм-фактор</span>
+                                        <span class="fnv-aboutTech">2280</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Тип чипов памяти</span>
+                                        <span class="fnv-aboutTech">TLC 3D NAND</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fnv-dropdown fnv-cpu">
+                        <div class="fnv-dropTrigger">
+                            <div class="fnv-leftSvgs">
+                                <svg class="fnv-upDown" xmlns="http://www.w3.org/2000/svg" width="16" height="9"
+                                     viewBox="0 0 16 9">
+                                    <g transform="translate(-210 -1025)">
+                                        <path
+                                                d="M13.964,14.192,19.92,8.142a1.152,1.152,0,0,0,0-1.615,1.117,1.117,0,0,0-1.593,0l-6.749,6.854a1.155,1.155,0,0,0-.033,1.577l6.777,6.9a1.119,1.119,0,0,0,1.593,0,1.152,1.152,0,0,0,0-1.615Z"
+                                                transform="translate(203.806 1045.251) rotate(-90)" fill="#eb7d00" />
+                                    </g>
+                                </svg>
+                                <svg class="fnv-detailIcon" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                     viewBox="0 0 25 25">
+                                    <g id="cpu-icon" transform="translate(-580.176 -599.955)">
+                                        <rect id="Rectangle_76" data-name="Rectangle 76" width="19.336" height="19.328"
+                                              transform="translate(583.008 602.791)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="1" />
+                                        <g id="Group_5" data-name="Group 5">
+                                            <line id="Line_25" data-name="Line 25" y1="2.258"
+                                                  transform="translate(584.873 599.955)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_26" data-name="Line 26" y1="2.258"
+                                                  transform="translate(587.994 599.955)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_27" data-name="Line 27" y1="2.258"
+                                                  transform="translate(591.115 599.955)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_28" data-name="Line 28" y1="2.258"
+                                                  transform="translate(594.236 599.955)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_29" data-name="Line 29" y1="2.258"
+                                                  transform="translate(597.358 599.955)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_30" data-name="Line 30" y1="2.258"
+                                                  transform="translate(600.479 599.955)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                        </g>
+                                        <g id="Group_6" data-name="Group 6">
+                                            <line id="Line_31" data-name="Line 31" x1="2.259"
+                                                  transform="translate(602.917 620.255)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_32" data-name="Line 32" x1="2.259"
+                                                  transform="translate(602.917 617.135)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_33" data-name="Line 33" x1="2.259"
+                                                  transform="translate(602.917 614.015)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_34" data-name="Line 34" x1="2.259"
+                                                  transform="translate(602.917 610.895)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_35" data-name="Line 35" x1="2.259"
+                                                  transform="translate(602.917 607.776)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_36" data-name="Line 36" x1="2.259"
+                                                  transform="translate(602.917 604.656)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                        </g>
+                                        <g id="Group_7" data-name="Group 7">
+                                            <line id="Line_37" data-name="Line 37" y2="2.258"
+                                                  transform="translate(600.479 622.697)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_38" data-name="Line 38" y2="2.258"
+                                                  transform="translate(597.358 622.697)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_39" data-name="Line 39" y2="2.258"
+                                                  transform="translate(594.236 622.697)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_40" data-name="Line 40" y2="2.258"
+                                                  transform="translate(591.115 622.697)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_41" data-name="Line 41" y2="2.258"
+                                                  transform="translate(587.994 622.697)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_42" data-name="Line 42" y2="2.258"
+                                                  transform="translate(584.873 622.697)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                        </g>
+                                        <g id="Group_8" data-name="Group 8">
+                                            <line id="Line_43" data-name="Line 43" x2="2.259"
+                                                  transform="translate(580.176 604.656)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_44" data-name="Line 44" x2="2.259"
+                                                  transform="translate(580.176 607.776)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_45" data-name="Line 45" x2="2.259"
+                                                  transform="translate(580.176 610.895)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_46" data-name="Line 46" x2="2.259"
+                                                  transform="translate(580.176 614.015)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_47" data-name="Line 47" x2="2.259"
+                                                  transform="translate(580.176 617.135)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                            <line id="Line_48" data-name="Line 48" x2="2.259"
+                                                  transform="translate(580.176 620.255)"   stroke="#737373"
+                                                  stroke-miterlimit="10" stroke-width="0.75" />
+                                        </g>
+                                        <rect id="Rectangle_77" data-name="Rectangle 77" width="12.47" height="12.465"
+                                              rx="2.078" transform="translate(586.441 606.223)"
+                                              stroke="#737373" stroke-miterlimit="10" stroke-width="0.75" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="fnv-detailName">процессоры</span>
+                            <span class="fnv-detailShort">Intel Core i5-11600</span>
+                            <div class="fnv-plusMinus">
+                                <button class="fnv-minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="1" viewBox="0 0 20 1">
+                                        <g transform="translate(-946 -996.5)">
+                                            <line id="Line_69" data-name="Line 69" y1="20"
+                                                  transform="translate(966 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                                <label>
+                                    <input class="fnv-detailCount" type="text" size="1" value="1" readonly>
+                                </label>
+                                <button class="fnv-plus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <g transform="translate(-1008 -987)">
+                                            <line id="Line_67" data-name="Line 67" y2="20"
+                                                  transform="translate(1018 987)" stroke-width="2" />
+                                            <line id="Line_68" data-name="Line 68" y1="20"
+                                                  transform="translate(1028 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="fnv-dropdownContent">
+                            <div class="fnv-dropdownItem">
+                                <div class="fnv-imgItem">
+                                    <img src="./img/configure/cpu1.png" alt="">
+                                </div>
+                                <div class="fnv-aboutItem">
+                                    <div class="fnv-choiceCheck">
+                                        <p>Intel Core i5-11600</p>
+                                        <button class="fnv-active">
+                                            <span>выбрано</span>
+                                            <span>+8103 ₽</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                 viewBox="0 0 22 22">
+                                                <path id="Icon_awesome-check-circle"
+                                                      data-name="Icon awesome-check-circle"
+                                                      d="M22.563,11.563a11,11,0,1,1-11-11A11,11,0,0,1,22.563,11.563ZM10.29,17.387l8.161-8.161a.71.71,0,0,0,0-1l-1-1a.71.71,0,0,0-1,0L9.788,13.874,6.681,10.767a.71.71,0,0,0-1,0l-1,1a.71.71,0,0,0,0,1l4.613,4.613a.71.71,0,0,0,1,0Z"
+                                                      transform="translate(-0.563 -0.563)" fill="#eb7d00" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                                <g id="Ellipse_10" data-name="Ellipse 10"   stroke="#eb7d00" stroke-width="1">
+                                                    <circle cx="11" cy="11" r="11" stroke="none"/>
+                                                    <circle cx="11" cy="11" r="10.5"  />
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Ядро</span>
+                                        <span class="fnv-aboutTech">Rocket Lake-S</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Техпроцесс</span>
+                                        <span class="fnv-aboutTech">14 нм</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Количество ядер/потоков</span>
+                                        <span class="fnv-aboutTech">6/12</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Объем кэша L<sub>3</sub></span>
+                                        <span class="fnv-aboutTech">12 Мб</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Базовая частота процессора (ГГц)</span>
+                                        <span class="fnv-aboutTech">2800 ГГц</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Максимальная частота в турбо режиме (ГГц)</span>
+                                        <span class="fnv-aboutTech">4800 ГГц</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Тепловыделение (TDP)</span>
+                                        <span class="fnv-aboutTech">65 Вт</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fnv-dropdown fnv-gpu">
+                        <div class="fnv-dropTrigger">
+                            <div class="fnv-leftSvgs">
+                                <svg class="fnv-upDown" xmlns="http://www.w3.org/2000/svg" width="16" height="9"
+                                     viewBox="0 0 16 9">
+                                    <g transform="translate(-210 -1025)">
+                                        <path
+                                                d="M13.964,14.192,19.92,8.142a1.152,1.152,0,0,0,0-1.615,1.117,1.117,0,0,0-1.593,0l-6.749,6.854a1.155,1.155,0,0,0-.033,1.577l6.777,6.9a1.119,1.119,0,0,0,1.593,0,1.152,1.152,0,0,0,0-1.615Z"
+                                                transform="translate(203.806 1045.251) rotate(-90)" fill="#eb7d00" />
+                                    </g>
+                                </svg>
+                                <svg class="fnv-detailIcon" xmlns="http://www.w3.org/2000/svg" width="20.875" height="30.5"
+                                     viewBox="0 0 20.875 30.5">
+                                    <g id="gpu-icon" transform="translate(-517.972 -564.297)">
+                                        <rect id="Rectangle_75" data-name="Rectangle 75" width="16.771" height="26.81"
+                                              transform="translate(520.341 564.797)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="1" />
+                                        <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(523.616 567.347)"
+                                           stroke="#737373" stroke-miterlimit="10" stroke-width="0.75">
+                                            <ellipse cx="5.197" cy="5.099" rx="5.197" ry="5.099" stroke="none" />
+                                            <ellipse cx="5.197" cy="5.099" rx="4.822" ry="4.724"   />
+                                        </g>
+                                        <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(523.631 578.409)"
+                                           stroke="#737373" stroke-miterlimit="10" stroke-width="0.75">
+                                            <ellipse cx="5.183" cy="5.099" rx="5.183" ry="5.099" stroke="none" />
+                                            <ellipse cx="5.183" cy="5.099" rx="4.808" ry="4.724"   />
+                                        </g>
+                                        <path id="Path_19" data-name="Path 19" d="M518.472,594.8"
+                                              stroke="#000" stroke-miterlimit="10" stroke-width="1" />
+                                        <path id="Path_20" data-name="Path 20" d="M518.472,591.231"
+                                              stroke="#000" stroke-miterlimit="10" stroke-width="1" />
+                                        <line id="Line_24" data-name="Line 24" y2="9.737"
+                                              transform="translate(538.472 579.849)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.75" />
+                                        <path id="Path_21" data-name="Path 21" d="M520.341,591.608h-1.868v3.19"
+                                              stroke="#737373" stroke-miterlimit="10" stroke-width="1" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="fnv-detailName">видеокарты</span>
+                            <span class="fnv-detailShort">PALIT GeForce RTX 3060 Dual 12GB</span>
+                            <div class="fnv-plusMinus">
+                                <button class="fnv-minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="1" viewBox="0 0 20 1">
+                                        <g transform="translate(-946 -996.5)">
+                                            <line id="Line_69" data-name="Line 69" y1="20"
+                                                  transform="translate(966 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                                <label>
+                                    <input class="fnv-detailCount" type="text" size="1" value="1" readonly>
+                                </label>
+                                <button class="fnv-plus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <g transform="translate(-1008 -987)">
+                                            <line id="Line_67" data-name="Line 67" y2="20"
+                                                  transform="translate(1018 987)" stroke-width="2" />
+                                            <line id="Line_68" data-name="Line 68" y1="20"
+                                                  transform="translate(1028 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="fnv-dropdownContent">
+                            <div class="fnv-dropdownItem">
+                                <div class="fnv-imgItem">
+                                    <img src="./img/configure/gpu1.png" alt="">
+                                </div>
+                                <div class="fnv-aboutItem">
+                                    <div class="fnv-choiceCheck">
+                                        <p>PALIT GeForce RTX 3060 Dual 12GB</p>
+                                        <button class="fnv-active">
+                                            <span>выбрано</span>
+                                            <span>+8103 ₽</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                 viewBox="0 0 22 22">
+                                                <path id="Icon_awesome-check-circle"
+                                                      data-name="Icon awesome-check-circle"
+                                                      d="M22.563,11.563a11,11,0,1,1-11-11A11,11,0,0,1,22.563,11.563ZM10.29,17.387l8.161-8.161a.71.71,0,0,0,0-1l-1-1a.71.71,0,0,0-1,0L9.788,13.874,6.681,10.767a.71.71,0,0,0-1,0l-1,1a.71.71,0,0,0,0,1l4.613,4.613a.71.71,0,0,0,1,0Z"
+                                                      transform="translate(-0.563 -0.563)" fill="#eb7d00" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                                <g id="Ellipse_10" data-name="Ellipse 10"   stroke="#eb7d00" stroke-width="1">
+                                                    <circle cx="11" cy="11" r="11" stroke="none"/>
+                                                    <circle cx="11" cy="11" r="10.5"  />
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Графический процессор</span>
+                                        <span class="fnv-aboutTech">Rocket Lake-S</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Штатная частота работы видеочипа (МГц)</span>
+                                        <span class="fnv-aboutTech">14 нм</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Турбочастота (МГц)</span>
+                                        <span class="fnv-aboutTech">1777 МГц</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Количество Ядер CUDA</span>
+                                        <span class="fnv-aboutTech">3584</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Пропускная способность памяти (ГБ / сек)</span>
+                                        <span class="fnv-aboutTech">360</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Объем видеопамяти</span>
+                                        <span class="fnv-aboutTech">12 ГБ</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Видео разъемы</span>
+                                        <span class="fnv-aboutTech">HDMI, DisplayPort</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fnv-dropdown fnv-ram">
+                        <div class="fnv-dropTrigger">
+                            <div class="fnv-leftSvgs">
+                                <svg class="fnv-upDown" xmlns="http://www.w3.org/2000/svg" width="16" height="9"
+                                     viewBox="0 0 16 9">
+                                    <g transform="translate(-210 -1025)">
+                                        <path
+                                                d="M13.964,14.192,19.92,8.142a1.152,1.152,0,0,0,0-1.615,1.117,1.117,0,0,0-1.593,0l-6.749,6.854a1.155,1.155,0,0,0-.033,1.577l6.777,6.9a1.119,1.119,0,0,0,1.593,0,1.152,1.152,0,0,0,0-1.615Z"
+                                                transform="translate(203.806 1045.251) rotate(-90)" fill="#eb7d00" />
+                                    </g>
+                                </svg>
+                                <svg class="fnv-detailIcon" xmlns="http://www.w3.org/2000/svg" width="30.75" height="13.75"
+                                     viewBox="0 0 30.75 13.75">
+                                    <g id="ram-icon" transform="translate(-609.245 -602.271)">
+                                        <rect id="Rectangle_70" data-name="Rectangle 70" width="30" height="11.06"
+                                              transform="translate(609.62 602.646)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.75" />
+                                        <rect id="Rectangle_71" data-name="Rectangle 71" width="4.052" height="7.349"
+                                              transform="translate(615.632 604.552)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.75" />
+                                        <rect id="Rectangle_72" data-name="Rectangle 72" width="4.052" height="7.349"
+                                              transform="translate(620.494 604.552)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.75" />
+                                        <rect id="Rectangle_73" data-name="Rectangle 73" width="4.052" height="7.349"
+                                              transform="translate(625.357 604.552)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.75" />
+                                        <rect id="Rectangle_74" data-name="Rectangle 74" width="4.052" height="7.349"
+                                              transform="translate(630.219 604.552)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.75" />
+                                        <line id="Line_23" data-name="Line 23" x2="26.249"
+                                              transform="translate(611.495 615.646)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.75" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="fnv-detailName">оперативная память</span>
+                            <span class="fnv-detailShort">8gb Kingston HyperX Predator 3000 МГц</span>
+                            <div class="fnv-plusMinus">
+                                <button class="fnv-minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="1" viewBox="0 0 20 1">
+                                        <g transform="translate(-946 -996.5)">
+                                            <line id="Line_69" data-name="Line 69" y1="20"
+                                                  transform="translate(966 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                                <label>
+                                    <input class="fnv-detailCount" type="text" size="1" value="1" readonly>
+                                </label>
+                                <button class="fnv-plus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <g transform="translate(-1008 -987)">
+                                            <line id="Line_67" data-name="Line 67" y2="20"
+                                                  transform="translate(1018 987)" stroke-width="2" />
+                                            <line id="Line_68" data-name="Line 68" y1="20"
+                                                  transform="translate(1028 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="fnv-dropdownContent">
+                            <div class="fnv-dropdownItem">
+                                <div class="fnv-imgItem">
+                                    <img src="./img/configure/ram1.png" alt="">
+                                </div>
+                                <div class="fnv-aboutItem">
+                                    <div class="fnv-choiceCheck">
+                                        <p>8gb Kingston HyperX Predator 3000 МГц</p>
+                                        <button class="fnv-active">
+                                            <span>выбрано</span>
+                                            <span>+8103 ₽</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                 viewBox="0 0 22 22">
+                                                <path id="Icon_awesome-check-circle"
+                                                      data-name="Icon awesome-check-circle"
+                                                      d="M22.563,11.563a11,11,0,1,1-11-11A11,11,0,0,1,22.563,11.563ZM10.29,17.387l8.161-8.161a.71.71,0,0,0,0-1l-1-1a.71.71,0,0,0-1,0L9.788,13.874,6.681,10.767a.71.71,0,0,0-1,0l-1,1a.71.71,0,0,0,0,1l4.613,4.613a.71.71,0,0,0,1,0Z"
+                                                      transform="translate(-0.563 -0.563)" fill="#eb7d00" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                                <g id="Ellipse_10" data-name="Ellipse 10"   stroke="#eb7d00" stroke-width="1">
+                                                    <circle cx="11" cy="11" r="11" stroke="none"/>
+                                                    <circle cx="11" cy="11" r="10.5"  />
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Тип памяти</span>
+                                        <span class="fnv-aboutTech">DDR<sub>4</sub></span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Объём модуля памяти</span>
+                                        <span class="fnv-aboutTech">8 ГБ</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Тактовая частота</span>
+                                        <span class="fnv-aboutTech">3000 Мгц</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Профили Intel XMP</span>
+                                        <span class="fnv-aboutTech">3000 МГц (15-17-17), 2666 МГц (15-17-17)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fnv-motherBoard fnv-dropdown">
+                        <div class="fnv-dropTrigger">
+                            <div class="fnv-leftSvgs">
+                                <svg class="fnv-upDown" xmlns="http://www.w3.org/2000/svg" width="16" height="9"
+                                     viewBox="0 0 16 9">
+                                    <g transform="translate(-210 -1025)">
+                                        <path
+                                                d="M13.964,14.192,19.92,8.142a1.152,1.152,0,0,0,0-1.615,1.117,1.117,0,0,0-1.593,0l-6.749,6.854a1.155,1.155,0,0,0-.033,1.577l6.777,6.9a1.119,1.119,0,0,0,1.593,0,1.152,1.152,0,0,0,0-1.615Z"
+                                                transform="translate(203.806 1045.251) rotate(-90)" fill="#eb7d00" />
+                                    </g>
+                                </svg>
+                                <svg class="fnv-detailIcon" xmlns="http://www.w3.org/2000/svg" width="25.25" height="30"
+                                     viewBox="0 0 25.25 30">
+                                    <g id="mother-icon" transform="translate(-580.624 -560.999)">
+                                        <g id="Rectangle_78" data-name="Rectangle 78"
+                                           transform="translate(581.642 560.999)"   stroke="#737373"
+                                           stroke-miterlimit="10" stroke-width="0.5">
+                                            <rect width="24.232" height="30" stroke="none" />
+                                            <rect x="0.25" y="0.25" width="23.732" height="29.5"   />
+                                        </g>
+                                        <g id="Rectangle_79" data-name="Rectangle 79"
+                                           transform="translate(584.599 565.256)"   stroke="#737373"
+                                           stroke-miterlimit="10" stroke-width="0.5">
+                                            <rect width="8.077" height="8.83" stroke="none" />
+                                            <rect x="0.25" y="0.25" width="7.577" height="8.33"   />
+                                        </g>
+                                        <line id="Line_49" data-name="Line 49" y2="8.83"
+                                              transform="translate(596.895 565.256)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.5" />
+                                        <line id="Line_50" data-name="Line 50" y2="8.83"
+                                              transform="translate(598.301 565.256)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.5" />
+                                        <line id="Line_51" data-name="Line 51" y2="8.83"
+                                              transform="translate(599.635 565.256)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.5" />
+                                        <line id="Line_52" data-name="Line 52" y2="8.83"
+                                              transform="translate(601.042 565.256)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.5" />
+                                        <line id="Line_53" data-name="Line 53" x2="16.443"
+                                              transform="translate(584.599 582.388)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.5" />
+                                        <line id="Line_54" data-name="Line 54" x2="16.443"
+                                              transform="translate(584.599 586.961)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.5" />
+                                        <line id="Line_55" data-name="Line 55" y2="10.643"
+                                              transform="translate(580.874 565.256)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.5" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="fnv-detailName">материнские платы</span>
+                            <span class="fnv-detailShort">AsRock Z590M Pro4</span>
+                            <div class="fnv-plusMinus">
+                                <button class="fnv-minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="1" viewBox="0 0 20 1">
+                                        <g transform="translate(-946 -996.5)">
+                                            <line id="Line_69" data-name="Line 69" y1="20"
+                                                  transform="translate(966 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                                <label>
+                                    <input class="fnv-detailCount" type="text" size="1" value="1" readonly>
+                                </label>
+                                <button class="fnv-plus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <g transform="translate(-1008 -987)">
+                                            <line id="Line_67" data-name="Line 67" y2="20"
+                                                  transform="translate(1018 987)" stroke-width="2" />
+                                            <line id="Line_68" data-name="Line 68" y1="20"
+                                                  transform="translate(1028 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fnv-dropdown fnv-hdd">
+                        <div class="fnv-dropTrigger">
+                            <div class="fnv-leftSvgs">
+                                <svg class="fnv-upDown" xmlns="http://www.w3.org/2000/svg" width="16" height="9"
+                                     viewBox="0 0 16 9">
+                                    <g transform="translate(-210 -1025)">
+                                        <path
+                                                d="M13.964,14.192,19.92,8.142a1.152,1.152,0,0,0,0-1.615,1.117,1.117,0,0,0-1.593,0l-6.749,6.854a1.155,1.155,0,0,0-.033,1.577l6.777,6.9a1.119,1.119,0,0,0,1.593,0,1.152,1.152,0,0,0,0-1.615Z"
+                                                transform="translate(203.806 1045.251) rotate(-90)" fill="#eb7d00" />
+                                    </g>
+                                </svg>
+                                <svg class="fnv-detailIcon" xmlns="http://www.w3.org/2000/svg" width="25.75" height="30.75"
+                                     viewBox="0 0 25.75 30.75">
+                                    <g id="hhd-icon" transform="translate(-610.501 -560.624)">
+                                        <rect id="Rectangle_69" data-name="Rectangle 69" width="25" height="30"
+                                              transform="translate(610.876 560.999)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.75" />
+                                        <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="8.838" cy="8.01" rx="8.838"
+                                                 ry="8.01" transform="translate(614.196 564.175)"
+                                                 stroke="#737373" stroke-miterlimit="10" stroke-width="0.75" />
+                                        <line id="Line_21" data-name="Line 21" x2="10.91"
+                                              transform="translate(614.196 586.214)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.75" />
+                                        <line id="Line_22" data-name="Line 22" x2="5.006"
+                                              transform="translate(628.929 586.214)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.75" />
+                                        <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="1.737" cy="1.574" rx="1.737"
+                                                 ry="1.574" transform="translate(621.297 570.611)"
+                                                 stroke="#737373" stroke-miterlimit="10" stroke-width="0.75" />
+                                        <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="1.35" cy="1.224" rx="1.35"
+                                                 ry="1.224" transform="translate(612.845 579.797)"
+                                                 stroke="#737373" stroke-miterlimit="10" stroke-width="0.5" />
+                                        <path id="Path_18" data-name="Path 18"
+                                              d="M614.311,579.754l1.981-2.732a.549.549,0,0,1,.182-.155s4.6-2.61,4.674-2.475-3.944,2.825-3.944,2.825a.535.535,0,0,0-.125.126s-1.881,2.651-1.955,2.734A2.114,2.114,0,0,0,614.311,579.754Z"
+                                              fill="#737373" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="fnv-detailName">жёсткие диски</span>
+                            <span class="fnv-detailShort">1 ТБ Seagate 7200 BarraCuda</span>
+                            <div class="fnv-plusMinus">
+                                <button class="fnv-minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="1" viewBox="0 0 20 1">
+                                        <g transform="translate(-946 -996.5)">
+                                            <line id="Line_69" data-name="Line 69" y1="20"
+                                                  transform="translate(966 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                                <label>
+                                    <input class="fnv-detailCount" type="text" size="1" value="1" readonly>
+                                </label>
+                                <button class="fnv-plus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <g transform="translate(-1008 -987)">
+                                            <line id="Line_67" data-name="Line 67" y2="20"
+                                                  transform="translate(1018 987)" stroke-width="2" />
+                                            <line id="Line_68" data-name="Line 68" y1="20"
+                                                  transform="translate(1028 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="fnv-dropdownContent">
+                            <div class="fnv-dropdownItem">
+                                <div class="fnv-imgItem">
+                                    <img src="./img/configure/hhd1.png" alt="">
+                                </div>
+                                <div class="fnv-aboutItem">
+                                    <div class="fnv-choiceCheck">
+                                        <p>1 ТБ Seagate 7200 BarraCuda</p>
+                                        <button class="fnv-active">
+                                            <span>выбрано</span>
+                                            <span>+8103 ₽</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                 viewBox="0 0 22 22">
+                                                <path id="Icon_awesome-check-circle"
+                                                      data-name="Icon awesome-check-circle"
+                                                      d="M22.563,11.563a11,11,0,1,1-11-11A11,11,0,0,1,22.563,11.563ZM10.29,17.387l8.161-8.161a.71.71,0,0,0,0-1l-1-1a.71.71,0,0,0-1,0L9.788,13.874,6.681,10.767a.71.71,0,0,0-1,0l-1,1a.71.71,0,0,0,0,1l4.613,4.613a.71.71,0,0,0,1,0Z"
+                                                      transform="translate(-0.563 -0.563)" fill="#eb7d00" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                                <g id="Ellipse_10" data-name="Ellipse 10"   stroke="#eb7d00" stroke-width="1">
+                                                    <circle cx="11" cy="11" r="11" stroke="none"/>
+                                                    <circle cx="11" cy="11" r="10.5"  />
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Объём</span>
+                                        <span class="fnv-aboutTech">1 Тб</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Интерфейс</span>
+                                        <span class="fnv-aboutTech">SATA III</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Максимальная скорость передачи данных</span>
+                                        <span class="fnv-aboutTech">210 Мбайт/с</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Объём кэш-памяти</span>
+                                        <span class="fnv-aboutTech">64 Мб</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fnv-cooler fnv-dropdown">
+                        <div class="fnv-dropTrigger">
+                            <div class="fnv-leftSvgs">
+                                <svg class="fnv-upDown" xmlns="http://www.w3.org/2000/svg" width="16" height="9"
+                                     viewBox="0 0 16 9">
+                                    <g transform="translate(-210 -1025)">
+                                        <path
+                                                d="M13.964,14.192,19.92,8.142a1.152,1.152,0,0,0,0-1.615,1.117,1.117,0,0,0-1.593,0l-6.749,6.854a1.155,1.155,0,0,0-.033,1.577l6.777,6.9a1.119,1.119,0,0,0,1.593,0,1.152,1.152,0,0,0,0-1.615Z"
+                                                transform="translate(203.806 1045.251) rotate(-90)" fill="#eb7d00" />
+                                    </g>
+                                </svg>
+                                <svg class="fnv-detailIcon" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                     viewBox="0 0 26 26">
+                                    <g id="cool-icon" transform="translate(-543.596 -595.331)">
+                                        <circle id="Ellipse_8" data-name="Ellipse 8" cx="3.344" cy="3.344" r="3.344"
+                                                transform="translate(553.252 604.987)"   stroke="#737373"
+                                                stroke-miterlimit="10" stroke-width="1" />
+                                        <path id="Path_22" data-name="Path 22"
+                                              d="M558.518,605.6a3.788,3.788,0,0,0-2.244-.594c-1.593-.093-1.6-2.523-1.6-4.208a3.837,3.837,0,0,1,1.4-2.971,1.5,1.5,0,0,1,2.441,1.18Z"
+                                              fill="#737373" stroke="rgba(0,0,0,0)" stroke-width="1" />
+                                        <path id="Path_23" data-name="Path 23"
+                                              d="M559.327,610.253a3.788,3.788,0,0,0,.593-2.244c.094-1.593,2.523-1.6,4.208-1.6a3.841,3.841,0,0,1,2.972,1.4,1.5,1.5,0,0,1-1.181,2.441Z"
+                                              fill="#737373" stroke="rgba(0,0,0,0)" stroke-width="1" />
+                                        <path id="Path_24" data-name="Path 24"
+                                              d="M554.673,610.983a3.78,3.78,0,0,0,2.244.593c1.593.094,1.6,2.524,1.6,4.208a3.84,3.84,0,0,1-1.4,2.972,1.5,1.5,0,0,1-2.441-1.18Z"
+                                              fill="#737373" stroke="rgba(0,0,0,0)" stroke-width="1" />
+                                        <path id="Path_25" data-name="Path 25"
+                                              d="M553.8,606.408a3.788,3.788,0,0,0-.593,2.244c-.094,1.593-2.523,1.6-4.208,1.6a3.838,3.838,0,0,1-2.971-1.4,1.5,1.5,0,0,1,1.18-2.441Z"
+                                              fill="#737373" stroke="rgba(115,115,115,0)" stroke-width="1" />
+                                        <circle id="Ellipse_9" data-name="Ellipse 9" cx="12.5" cy="12.5" r="12.5"
+                                                transform="translate(544.096 595.831)"   stroke="#737373"
+                                                stroke-miterlimit="10" stroke-width="1" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="fnv-detailName">системы охлаждения</span>
+                            <span class="fnv-detailShort">CoolerMaster MasterAir MA610P</span>
+                            <div class="fnv-plusMinus">
+                                <button class="fnv-minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="1" viewBox="0 0 20 1">
+                                        <g transform="translate(-946 -996.5)">
+                                            <line id="Line_69" data-name="Line 69" y1="20"
+                                                  transform="translate(966 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                                <label>
+                                    <input class="fnv-detailCount" type="text" size="1" value="1" readonly>
+                                </label>
+                                <button class="fnv-plus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <g transform="translate(-1008 -987)">
+                                            <line id="Line_67" data-name="Line 67" y2="20"
+                                                  transform="translate(1018 987)" stroke-width="2" />
+                                            <line id="Line_68" data-name="Line 68" y1="20"
+                                                  transform="translate(1028 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fnv-dropdown fnv-bp">
+                        <div class="fnv-dropTrigger">
+                            <div class="fnv-leftSvgs">
+                                <svg class="fnv-upDown" xmlns="http://www.w3.org/2000/svg" width="16" height="9"
+                                     viewBox="0 0 16 9">
+                                    <g transform="translate(-210 -1025)">
+                                        <path
+                                                d="M13.964,14.192,19.92,8.142a1.152,1.152,0,0,0,0-1.615,1.117,1.117,0,0,0-1.593,0l-6.749,6.854a1.155,1.155,0,0,0-.033,1.577l6.777,6.9a1.119,1.119,0,0,0,1.593,0,1.152,1.152,0,0,0,0-1.615Z"
+                                                transform="translate(203.806 1045.251) rotate(-90)" fill="#eb7d00" />
+                                    </g>
+                                </svg>
+                                <svg class="fnv-detailIcon" xmlns="http://www.w3.org/2000/svg" width="15.75" height="23.363"
+                                     viewBox="0 0 15.75 23.363">
+                                    <g id="bp" transform="translate(-520.851 -600.955)">
+                                        <path id="Path_26" data-name="Path 26" d="M536.226,604.5a7.5,7.5,0,1,1-15,0Z"
+                                              stroke="#737373" stroke-miterlimit="10" stroke-width="0.75" />
+                                        <line id="Line_56" data-name="Line 56" y1="3.543"
+                                              transform="translate(524.344 600.955)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="1" />
+                                        <line id="Line_57" data-name="Line 57" y1="3.543"
+                                              transform="translate(533.116 600.955)"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="1" />
+                                        <path id="Path_27" data-name="Path 27"
+                                              d="M531.411,611.388v3.358a2.456,2.456,0,0,1-2.685,2.106h0a2.456,2.456,0,0,1-2.684-2.106v-3.358"
+                                              stroke="#737373" stroke-miterlimit="10" stroke-width="0.75" />
+                                        <path id="Path_28" data-name="Path 28"
+                                              d="M528.726,616.852c.1,1.093,2.542,6.457.015,7.1"
+                                              stroke="#737373" stroke-miterlimit="10" stroke-width="0.75" />
+                                        <path id="Path_29" data-name="Path 29"
+                                              d="M529,605.808l-.9,2.14,1.243.015-.887,2.89"   stroke="#737373"
+                                              stroke-miterlimit="10" stroke-width="0.25" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="fnv-detailName">блоки питания</span>
+                            <span class="fnv-detailShort">be quiet! Pure Power 11 600W</span>
+                            <div class="fnv-plusMinus">
+                                <button class="fnv-minus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="1" viewBox="0 0 20 1">
+                                        <g transform="translate(-946 -996.5)">
+                                            <line id="Line_69" data-name="Line 69" y1="20"
+                                                  transform="translate(966 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                                <label>
+                                    <input class="fnv-detailCount" type="text" size="1" value="1" readonly>
+                                </label>
+                                <button class="fnv-plus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <g transform="translate(-1008 -987)">
+                                            <line id="Line_67" data-name="Line 67" y2="20"
+                                                  transform="translate(1018 987)" stroke-width="2" />
+                                            <line id="Line_68" data-name="Line 68" y1="20"
+                                                  transform="translate(1028 997) rotate(90)" stroke-width="2" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="fnv-dropdownContent">
+                            <div class="fnv-dropdownItem">
+                                <div class="fnv-imgItem">
+                                    <img src="./img/configure/bp1.png" alt="">
+                                </div>
+                                <div class="fnv-aboutItem">
+                                    <div class="fnv-choiceCheck">
+                                        <p>be quiet! Pure Power 11 600W</p>
+                                        <button class="fnv-active">
+                                            <span>выбрано</span>
+                                            <span>+8103 ₽</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                 viewBox="0 0 22 22">
+                                                <path id="Icon_awesome-check-circle"
+                                                      data-name="Icon awesome-check-circle"
+                                                      d="M22.563,11.563a11,11,0,1,1-11-11A11,11,0,0,1,22.563,11.563ZM10.29,17.387l8.161-8.161a.71.71,0,0,0,0-1l-1-1a.71.71,0,0,0-1,0L9.788,13.874,6.681,10.767a.71.71,0,0,0-1,0l-1,1a.71.71,0,0,0,0,1l4.613,4.613a.71.71,0,0,0,1,0Z"
+                                                      transform="translate(-0.563 -0.563)" fill="#eb7d00" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                                <g id="Ellipse_10" data-name="Ellipse 10"   stroke="#eb7d00" stroke-width="1">
+                                                    <circle cx="11" cy="11" r="11" stroke="none"/>
+                                                    <circle cx="11" cy="11" r="10.5"  />
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Мощность (номинал)</span>
+                                        <span class="fnv-aboutTech">600 Вт</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Сертификация 80 PLUS</span>
+                                        <span class="fnv-aboutTech">Gold</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Система охлаждения</span>
+                                        <span class="fnv-aboutTech">Активная</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Подсветка</span>
+                                        <span class="fnv-aboutTech">Нет</span>
+                                    </div>
+                                    <div>
+                                        <span class="fnv-aboutName">Отстегивающиеся кабели</span>
+                                        <span class="fnv-aboutTech">Нет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <div class="fnv-finalPriceBlock">
+                <p>стоимость сборки</p>
+                <p class="fnv-finalPrice">167000 ₽</p>
+                <button class="fnv-toBasket">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30.959" height="27.52"
+                         viewBox="0 0 30.959 27.52">
+                        <path
+                                d="M28.386,16.2l2.541-11.18A1.29,1.29,0,0,0,29.669,3.44H8.557L8.065,1.031A1.29,1.29,0,0,0,6.8,0H1.29A1.29,1.29,0,0,0,0,1.29v.86A1.29,1.29,0,0,0,1.29,3.44H5.046L8.822,21.9a3.01,3.01,0,1,0,3.6.46H23.694a3.009,3.009,0,1,0,3.418-.559l.3-1.3a1.29,1.29,0,0,0-1.258-1.576H11.724l-.352-1.72H27.128A1.29,1.29,0,0,0,28.386,16.2Z" />
+                    </svg>
+                    В корзину
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <footer class="fnv-footer" id="contacts">
+    <div class="fnv-cont">
+        <div class="fnv-menuFooter">
+            <nav>
+                <a href="./index.html">Serious pc</a>
+                <ul>
+                    <li><a href="./index.html#models">Модели</a></li>
+                    <li><a href="./index.html#periphery">Периферия</a></li>
+                    <li><a href="./index.html#stock">Акции</a></li>
+                    <li><a href="./index.html#news">Новости</a></li>
+                    <li><a href="./index.html#contacts">О нас</a></li>
+                </ul>
+            </nav>
+            <p class="fnv-copy">&copy; Serious Pc 2021</p>
+            <p class="fnv-privacy">
+                <a href="#">Политика конфиденциальности</a>
+            </p>
+        </div>
+        <div class="fnv-contactsFooter">
+            <div class="fnv-telBlock">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="33" viewBox="0 0 24 33">
+                    <g transform="translate(-6 -1.5)">
+                        <path d="M10.5,3h15a3,3,0,0,1,3,3V30a3,3,0,0,1-3,3h-15a3,3,0,0,1-3-3V6a3,3,0,0,1,3-3Z"
+
+                              stroke="#eb7d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                        <path d="M18,27h0"   stroke="#eb7d00" stroke-linecap="round" stroke-linejoin="round"
+                              stroke-width="4" />
+                    </g>
+                </svg>
+                <div>
+                    <p>8(812)473-42-23</p>
+                    <p>8(812)473-57-75</p>
+                </div>
+            </div>
+            <div class="fnv-socials">
+                <a href="https://www.youtube.com/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38.4" height="27" viewBox="0 0 38.4 27">
+                        <path
+                                d="M38.648,8.725a4.825,4.825,0,0,0-3.395-3.417c-2.995-.808-15-.808-15-.808s-12.008,0-15,.808A4.825,4.825,0,0,0,1.852,8.725c-.8,3.014-.8,9.3-.8,9.3s0,6.289.8,9.3a4.753,4.753,0,0,0,3.395,3.362c2.995.808,15,.808,15,.808s12.008,0,15-.808a4.753,4.753,0,0,0,3.395-3.362c.8-3.014.8-9.3.8-9.3s0-6.289-.8-9.3ZM16.323,23.737V12.318l10.036,5.71L16.323,23.737Z"
+                                transform="translate(-1.05 -4.5)" />
+                    </svg>
+                </a>
+                <a href="https://vk.com/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37.876" height="22.5" viewBox="0 0 37.876 22.5">
+                        <path
+                                d="M38.32,8.276c.26-.879,0-1.526-1.252-1.526H32.927a1.778,1.778,0,0,0-1.8,1.174A34.7,34.7,0,0,1,26.037,16.4c-.963.963-1.406,1.273-1.934,1.273-.26,0-.661-.309-.661-1.188V8.276c0-1.055-.3-1.526-1.167-1.526H15.764a1,1,0,0,0-1.055.949c0,1,1.491,1.23,1.645,4.043v6.1c0,1.336-.239,1.582-.766,1.582-1.406,0-4.823-5.161-6.848-11.067-.408-1.146-.809-1.61-1.87-1.61H2.728c-1.181,0-1.42.555-1.42,1.174,0,1.1,1.406,6.546,6.546,13.746,3.424,4.915,8.248,7.58,12.635,7.58,2.637,0,2.96-.591,2.96-1.61,0-4.7-.239-5.14,1.083-5.14.612,0,1.666.309,4.127,2.679,2.813,2.813,3.277,4.071,4.852,4.071h4.141c1.181,0,1.779-.591,1.434-1.758-.787-2.454-6.11-7.5-6.349-7.84-.612-.788-.436-1.139,0-1.842.007-.007,5.063-7.123,5.583-9.534Z"
+                                transform="translate(-1.308 -6.75)" />
+                    </svg>
+                </a>
+                <a href="https://web.telegram.org/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31.497" height="26.415" viewBox="0 0 31.497 26.415">
+                        <path
+                                d="M31.409,6.933,26.655,29.348c-.359,1.582-1.294,1.976-2.623,1.23l-7.242-5.337L13.3,28.6a1.819,1.819,0,0,1-1.455.71l.52-7.376L25.784,9.809c.584-.52-.127-.809-.907-.288L8.283,19.969,1.139,17.733c-1.554-.485-1.582-1.554.323-2.3L29.4,4.669c1.294-.485,2.426.288,2,2.264Z"
+                                transform="translate(-0.001 -4.528)" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<!--    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./js/main.mini.js"></script>
+    
+<script src="./js/_configure.js"></script>
+
+  </body>
+</html>

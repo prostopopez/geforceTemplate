@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Клавиатура MSI Vigor GK</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://jqueryui.com//resources/demos/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    
+  </head>
+  <body>
+    <header class="fnv-header">
+    <div class="fnv-cont">
+        <div class="fnv-logoBlock">
+            <a href="./index.html">Serious pc</a>
+        </div>
+        <div class="fnv-mainMenu">
+            <nav>
+                <ul>
+                    <li><a href="./index.html#models">Модели</a></li>
+                    <li><a href="./index.html#periphery">Периферия</a></li>
+                    <li><a href="./index.html#stock">Акции</a></li>
+                    <li><a href="./index.html#news">Новости</a></li>
+                    <li><a href="./index.html#contacts">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="fnv-rightHeaderPart">
+            <div class="fnv-headerSearch fnv-inactive">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35.997" height="36.004" viewBox="0 0 35.997 36.004">
+                        <path
+                                d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="fnv-headerBasket">
+                <a href="./basket.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40.5" height="36" viewBox="0 0 40.5 36">
+                        <path
+                                d="M37.133,21.186,40.457,6.561A1.688,1.688,0,0,0,38.812,4.5H11.194L10.55,1.349A1.687,1.687,0,0,0,8.9,0H1.688A1.687,1.687,0,0,0,0,1.688V2.813A1.687,1.687,0,0,0,1.688,4.5H6.6L11.54,28.648a3.938,3.938,0,1,0,4.714.6H31a3.936,3.936,0,1,0,4.472-.732l.388-1.707a1.688,1.688,0,0,0-1.646-2.061H15.336l-.46-2.25H35.488A1.687,1.687,0,0,0,37.133,21.186Z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="fnv-headerMapMarker">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16.278" height="21.704" viewBox="0 0 16.278 21.704">
+                    <path
+                            d="M7.3,21.266C1.143,12.337,0,11.42,0,8.139a8.139,8.139,0,0,1,16.278,0c0,3.282-1.143,4.2-7.3,13.127a1.018,1.018,0,0,1-1.673,0Zm.836-9.736A3.391,3.391,0,1,0,4.748,8.139,3.391,3.391,0,0,0,8.139,11.53Z" />
+                </svg>
+                <span>Санкт-Петербург</span>
+            </div>
+        </div>
+        <button class="fnv-mobileButtons">
+            <svg class="fnv-closed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.7 12.2" id="hamburger">
+                <path d="M13.8,1.9H0.9C0.4,1.9,0,1.5,0,0.9v0C0,0.4,0.4,0,0.9,0h12.8
+                    c0.5,0,0.9,0.4,0.9,0.9v0C14.7,1.5,14.3,1.9,13.8,1.9z" />
+                <path d="M13.8,12.2H0.9c-0.5,0-0.9-0.4-0.9-0.9v0c0-0.5,0.4-0.9,0.9-0.9
+                    h12.8c0.5,0,0.9,0.4,0.9,0.9v0C14.7,11.7,14.3,12.2,13.8,12.2z" />
+                <path d="M13.8,7H0.9C0.4,7,0,6.5,0,6v0c0-0.5,0.4-0.9,0.9-0.9h12.8
+                    c0.5,0,0.9,0.4,0.9,0.9v0C14.7,6.5,14.3,7,13.8,7z" />
+            </svg>
+            <svg class="fnv-opened" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510" id="close">
+                <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z" />
+            </svg>
+        </button>
+    </div>
+</header>
+
+    
+<div class="fnv-keyboardPage fnv-pageStyle">
+    <div class="fnv-cont">
+        <div class="fnv-contentKeyb">
+            <div class="fnv-description">
+                <h4>Описание</h4>
+                <hr />
+                <div class="fnv-descrP">
+                    <p>
+                        Проводная клавиатура MSI Vigor GK20 - это высококачественная мембранная клавиатура, <br />
+                        напоминающая механические по тактильным ощущениям.
+                    </p>
+                    <p> Игровой режим и корректная обработка одновременного нажатия множества клавиш будут <br />
+                        залогом победы в сражениях. </p>
+                    <p>
+                        Клавиатура MSI Vigor GK20 имеет 6-зонную цветную подсветку с 8 визуальными эффектами и <br />
+                        управлением через приложение MSI Mystic Light. Работа подсветки легко синхронизируется с <br />
+                        подсветкой других совместимых компонентов.
+                    </p>
+                    <p>
+                        У клавиатуры имеется набор специальных клавиш для управления воспроизведением <br />
+                        мультимедийного контента.
+                    </p>
+                    <p>
+                        Водонепроницаемая конструкция клавиатуры обеспечивает защиту от случайно пролитых напитков.
+                        <br />
+                        Встроенная плоская подставка для запястий обеспечит комфорт для рук пользователя во время <br />
+                        игры или набора текста.
+                    </p>
+                </div>
+                <hr />
+            </div>
+            <div class="fnv-stats">
+                <h4>Характеристики</h4>
+                <hr />
+                <div class="fnv-flexStats">
+                    <div>
+                        <span>Тип клавиатуры</span><span class="fnv-typeOfKey">Мембранная</span>
+                    </div>
+                    <div>
+                        <span>Тип подключения</span><span class="fnv-typeOfConnect">Проводная</span>
+                    </div>
+                    <div>
+                        <span>Длина кабеля</span><span class="fnv-length">1.5м</span>
+                    </div>
+                    <div>
+                        <span>Материал</span><span class="fnv-material">Пластик</span>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <div class="fnv-priceBlock">
+                <p class="fnv-priceH">Стоимость</p>
+                <p class="fnv-price">2997 ₽</p>
+                <button class="fnv-toBasket">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30.959" height="27.52"
+                         viewBox="0 0 30.959 27.52">
+                        <path
+                                d="M28.386,16.2l2.541-11.18A1.29,1.29,0,0,0,29.669,3.44H8.557L8.065,1.031A1.29,1.29,0,0,0,6.8,0H1.29A1.29,1.29,0,0,0,0,1.29v.86A1.29,1.29,0,0,0,1.29,3.44H5.046L8.822,21.9a3.01,3.01,0,1,0,3.6.46H23.694a3.009,3.009,0,1,0,3.418-.559l.3-1.3a1.29,1.29,0,0,0-1.258-1.576H11.724l-.352-1.72H27.128A1.29,1.29,0,0,0,28.386,16.2Z" />
+                    </svg>
+                    В корзину
+                </button>
+            </div>
+        </div>
+        <div class="fnv-viewKeyb">
+            <img src="./img/keyboards/keyb1.png" alt="">
+            <img src="./img/keyboards/keyb1.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+    <footer class="fnv-footer" id="contacts">
+    <div class="fnv-cont">
+        <div class="fnv-menuFooter">
+            <nav>
+                <a href="./index.html">Serious pc</a>
+                <ul>
+                    <li><a href="./index.html#models">Модели</a></li>
+                    <li><a href="./index.html#periphery">Периферия</a></li>
+                    <li><a href="./index.html#stock">Акции</a></li>
+                    <li><a href="./index.html#news">Новости</a></li>
+                    <li><a href="./index.html#contacts">О нас</a></li>
+                </ul>
+            </nav>
+            <p class="fnv-copy">&copy; Serious Pc 2021</p>
+            <p class="fnv-privacy">
+                <a href="#">Политика конфиденциальности</a>
+            </p>
+        </div>
+        <div class="fnv-contactsFooter">
+            <div class="fnv-telBlock">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="33" viewBox="0 0 24 33">
+                    <g transform="translate(-6 -1.5)">
+                        <path d="M10.5,3h15a3,3,0,0,1,3,3V30a3,3,0,0,1-3,3h-15a3,3,0,0,1-3-3V6a3,3,0,0,1,3-3Z"
+
+                              stroke="#eb7d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                        <path d="M18,27h0"   stroke="#eb7d00" stroke-linecap="round" stroke-linejoin="round"
+                              stroke-width="4" />
+                    </g>
+                </svg>
+                <div>
+                    <p>8(812)473-42-23</p>
+                    <p>8(812)473-57-75</p>
+                </div>
+            </div>
+            <div class="fnv-socials">
+                <a href="https://www.youtube.com/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38.4" height="27" viewBox="0 0 38.4 27">
+                        <path
+                                d="M38.648,8.725a4.825,4.825,0,0,0-3.395-3.417c-2.995-.808-15-.808-15-.808s-12.008,0-15,.808A4.825,4.825,0,0,0,1.852,8.725c-.8,3.014-.8,9.3-.8,9.3s0,6.289.8,9.3a4.753,4.753,0,0,0,3.395,3.362c2.995.808,15,.808,15,.808s12.008,0,15-.808a4.753,4.753,0,0,0,3.395-3.362c.8-3.014.8-9.3.8-9.3s0-6.289-.8-9.3ZM16.323,23.737V12.318l10.036,5.71L16.323,23.737Z"
+                                transform="translate(-1.05 -4.5)" />
+                    </svg>
+                </a>
+                <a href="https://vk.com/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37.876" height="22.5" viewBox="0 0 37.876 22.5">
+                        <path
+                                d="M38.32,8.276c.26-.879,0-1.526-1.252-1.526H32.927a1.778,1.778,0,0,0-1.8,1.174A34.7,34.7,0,0,1,26.037,16.4c-.963.963-1.406,1.273-1.934,1.273-.26,0-.661-.309-.661-1.188V8.276c0-1.055-.3-1.526-1.167-1.526H15.764a1,1,0,0,0-1.055.949c0,1,1.491,1.23,1.645,4.043v6.1c0,1.336-.239,1.582-.766,1.582-1.406,0-4.823-5.161-6.848-11.067-.408-1.146-.809-1.61-1.87-1.61H2.728c-1.181,0-1.42.555-1.42,1.174,0,1.1,1.406,6.546,6.546,13.746,3.424,4.915,8.248,7.58,12.635,7.58,2.637,0,2.96-.591,2.96-1.61,0-4.7-.239-5.14,1.083-5.14.612,0,1.666.309,4.127,2.679,2.813,2.813,3.277,4.071,4.852,4.071h4.141c1.181,0,1.779-.591,1.434-1.758-.787-2.454-6.11-7.5-6.349-7.84-.612-.788-.436-1.139,0-1.842.007-.007,5.063-7.123,5.583-9.534Z"
+                                transform="translate(-1.308 -6.75)" />
+                    </svg>
+                </a>
+                <a href="https://web.telegram.org/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31.497" height="26.415" viewBox="0 0 31.497 26.415">
+                        <path
+                                d="M31.409,6.933,26.655,29.348c-.359,1.582-1.294,1.976-2.623,1.23l-7.242-5.337L13.3,28.6a1.819,1.819,0,0,1-1.455.71l.52-7.376L25.784,9.809c.584-.52-.127-.809-.907-.288L8.283,19.969,1.139,17.733c-1.554-.485-1.582-1.554.323-2.3L29.4,4.669c1.294-.485,2.426.288,2,2.264Z"
+                                transform="translate(-0.001 -4.528)" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<!--    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./js/main.mini.js"></script>
+    
+<script src="./js/_keyboardPage.js"></script>
+
+  </body>
+</html>

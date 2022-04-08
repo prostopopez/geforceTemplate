@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://jqueryui.com//resources/demos/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    
+  </head>
+  <body>
+    <header class="fnv-header">
+    <div class="fnv-cont">
+        <div class="fnv-logoBlock">
+            <a href="./index.html">Serious pc</a>
+        </div>
+        <div class="fnv-mainMenu">
+            <nav>
+                <ul>
+                    <li><a href="./index.html#models">Модели</a></li>
+                    <li><a href="./index.html#periphery">Периферия</a></li>
+                    <li><a href="./index.html#stock">Акции</a></li>
+                    <li><a href="./index.html#news">Новости</a></li>
+                    <li><a href="./index.html#contacts">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="fnv-rightHeaderPart">
+            <div class="fnv-headerSearch fnv-inactive">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35.997" height="36.004" viewBox="0 0 35.997 36.004">
+                        <path
+                                d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="fnv-headerBasket">
+                <a href="./basket.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40.5" height="36" viewBox="0 0 40.5 36">
+                        <path
+                                d="M37.133,21.186,40.457,6.561A1.688,1.688,0,0,0,38.812,4.5H11.194L10.55,1.349A1.687,1.687,0,0,0,8.9,0H1.688A1.687,1.687,0,0,0,0,1.688V2.813A1.687,1.687,0,0,0,1.688,4.5H6.6L11.54,28.648a3.938,3.938,0,1,0,4.714.6H31a3.936,3.936,0,1,0,4.472-.732l.388-1.707a1.688,1.688,0,0,0-1.646-2.061H15.336l-.46-2.25H35.488A1.687,1.687,0,0,0,37.133,21.186Z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="fnv-headerMapMarker">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16.278" height="21.704" viewBox="0 0 16.278 21.704">
+                    <path
+                            d="M7.3,21.266C1.143,12.337,0,11.42,0,8.139a8.139,8.139,0,0,1,16.278,0c0,3.282-1.143,4.2-7.3,13.127a1.018,1.018,0,0,1-1.673,0Zm.836-9.736A3.391,3.391,0,1,0,4.748,8.139,3.391,3.391,0,0,0,8.139,11.53Z" />
+                </svg>
+                <span>Санкт-Петербург</span>
+            </div>
+        </div>
+        <button class="fnv-mobileButtons">
+            <svg class="fnv-closed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.7 12.2" id="hamburger">
+                <path d="M13.8,1.9H0.9C0.4,1.9,0,1.5,0,0.9v0C0,0.4,0.4,0,0.9,0h12.8
+                    c0.5,0,0.9,0.4,0.9,0.9v0C14.7,1.5,14.3,1.9,13.8,1.9z" />
+                <path d="M13.8,12.2H0.9c-0.5,0-0.9-0.4-0.9-0.9v0c0-0.5,0.4-0.9,0.9-0.9
+                    h12.8c0.5,0,0.9,0.4,0.9,0.9v0C14.7,11.7,14.3,12.2,13.8,12.2z" />
+                <path d="M13.8,7H0.9C0.4,7,0,6.5,0,6v0c0-0.5,0.4-0.9,0.9-0.9h12.8
+                    c0.5,0,0.9,0.4,0.9,0.9v0C14.7,6.5,14.3,7,13.8,7z" />
+            </svg>
+            <svg class="fnv-opened" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510" id="close">
+                <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z" />
+            </svg>
+        </button>
+    </div>
+</header>
+
+    
+<div class="fnv-mainPage fnv-pageStyle">
+    <div class="fnv-slider">
+        <div class="fnv-slide fnv-fade">
+            <img src="./img/main/slide1.png" alt="" />
+            <div>
+                <div class="fnv-cont">
+                    <h4>NVIDIA GEFORCE 3080 TI</h4>
+                    <p>ВЫСШИЙ УРОВЕНЬ ИГРЫ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fnv-slide fnv-fade">
+            <img src="./img/main/slide2.jpg" alt="" />
+            <div>
+                <div class="fnv-cont">
+                    <h4>NVIDIA GEFORCE 3080 TI</h4>
+                    <p>ВЫСШИЙ УРОВЕНЬ ИГРЫ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fnv-slide fnv-fade">
+            <img src="./img/main/slide3.jpg" alt="" />
+            <div>
+                <div class="fnv-cont">
+                    <h4>NVIDIA GEFORCE 3080 TI</h4>
+                    <p>ВЫСШИЙ УРОВЕНЬ ИГРЫ</p>
+                </div>
+            </div>
+        </div>
+        <div class="fnv-sliderNav">
+            <div class="fnv-cont">
+                <button class="fnv-prev" onclick="plusSlides(-1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="46" viewBox="0 0 28 46">
+                        <path d="M40,14.4,34.672,9,12,32,34.672,55,40,49.6,22.694,32Z" transform="translate(-12 -9)" />
+                    </svg>
+                </button>
+                <button class="fnv-next" onclick="plusSlides(1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="46" viewBox="0 0 28 46">
+                        <path d="M18.213,9l-5.328,5.4L30.191,32,12.885,49.6,18.213,55,40.885,32Z"
+                              transform="translate(-12.885 -9)" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="fnv-cont" id="models">
+        <h3>Модели</h3>
+        <hr />
+        <div>
+            <a href="./gamingPC.html" class="fnv-cardCategory">
+                <img src="./img/main/gamePC.png" alt="">
+                <span>Игровые компьютеры</span>
+            </a>
+            <a href="#" class="fnv-cardCategory">
+                <img src="./img/main/workStation.png" alt="">
+                <span>Рабочие станции</span>
+            </a>
+            <a href="#" class="fnv-cardCategory">
+                <img src="./img/main/proPC.png" alt="">
+                <span>PRO игровые компьютеры</span>
+            </a>
+            <a href="#" class="fnv-cardCategory">
+                <img src="./img/main/officePC.png" alt="">
+                <span>Офисные компьютеры</span>
+            </a>
+        </div>
+    </div>
+    <div class="fnv-cont" id="periphery">
+        <h3>Периферия и комплектующие</h3>
+        <div class="fnv-hrAndAll">
+            <hr />
+            <a href="#" class="fnv-showAll">
+                Показать все
+            </a>
+        </div>
+        <div>
+            <a href="./keyboards.html" class="fnv-cardPeriphery">
+                <img src="./img/main/keyboards.png" alt="" />
+                <span>Клавиатуры</span>
+            </a>
+            <a href="#" class="fnv-cardPeriphery">
+                <img src="./img/main/mouses.png" alt="" />
+                <span>Мыши</span>
+            </a>
+            <a href="#" class="fnv-cardPeriphery">
+                <img src="./img/main/monitors.png" alt="" />
+                <span>Мониторы</span>
+            </a>
+            <a href="#" class="fnv-cardPeriphery">
+                <img src="./img/main/headphones.png" alt="" />
+                <span>Наушники</span>
+            </a>
+            <a href="#" class="fnv-cardPeriphery">
+                <img src="./img/main/chairs.png" alt="" />
+                <span>Кресла</span>
+            </a>
+            <a href="#" class="fnv-cardPeriphery">
+                <img src="./img/main/tables.png" alt="" />
+                <span>Столы</span>
+            </a>
+        </div>
+    </div>
+    <div class="fnv-cont" id="stock">
+        <h3>Акции</h3>
+        <hr />
+        <div class="fnv-stockSlider">
+            <div>
+                <img src="./img/main/stock1.png" alt="">
+            </div>
+            <div>
+                <img src="./img/main/stock2.png" alt="">
+            </div>
+            <div>
+                <img src="./img/main/stock3.png" alt="">
+            </div>
+            <div>
+                <img src="./img/main/stock1.png" alt="">
+            </div>
+            <div>
+                <img src="./img/main/stock2.png" alt="">
+            </div>
+            <div>
+                <img src="./img/main/stock3.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="fnv-gallery fnv-cont">
+        <h3>Галерея</h3>
+        <hr />
+        <div>
+            <div class="fnv-gallerySlider1">
+                <div>
+                    <img src="../img/main/gallery1.png" alt="">
+                </div>
+                <div>
+                    <img src="../img/main/gallery2.png" alt="">
+                </div>
+                <div>
+                    <img src="../img/main/gallery1.png" alt="">
+                </div>
+            </div>
+            <div class="fnv-gallerySlider2">
+                <div>
+                    <img src="../img/main/gallery2.png" alt="">
+                </div>
+                <div>
+                    <img src="../img/main/gallery1.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/main/gallery2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fnv-cont" id="news">
+        <h3>Новости</h3>
+        <hr />
+        <div>
+            <div class="fnv-news1">
+                <img src="./img/main/news1.png" alt="">
+                <div>
+                    <h4>Видеокарта NVIDIA GeForce RTX 3080 Ti</h4>
+                    <p>Видеокарта GeForce RTX™ 3080 Ti обеспечивает рекордную производительность
+                        для геймеров, работая на базе Ampere — архитектуры NVIDIA RTX 2-го поколения.</p>
+                </div>
+            </div>
+            <div class="fnv-news2">
+                <img src="./img/main/news2.png" alt="">
+                <div>
+                    <h4>Видеокарта NVIDIA GeForce RTX 3060/3060 Ti</h4>
+                    <p>Видеокарта GeForce RTX™ 3060 Ti обеспечивает оптимальную производительность
+                        в топовых играх благодаря возможностям Ampere — архитектуры NVIDIA RTX
+                        второго поколения.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fnv-aboutUs fnv-cont">
+        <div class="fnv-leftAbout">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+                    <path
+                            d="M41.482,7.03,24.282.31a4.579,4.579,0,0,0-3.306,0L3.777,7.03a4.034,4.034,0,0,0-2.652,3.721c0,16.673,10.257,28.2,19.843,31.942a4.579,4.579,0,0,0,3.306,0c7.677-3,19.852-13.355,19.852-31.942A4.038,4.038,0,0,0,41.482,7.03ZM22.634,37.486l-.009-32,15.758,6.157c-.3,12.716-7.355,21.93-15.749,25.845Z"
+                            transform="translate(-1.125 -0.002)" fill="#eb7d00" />
+                </svg>
+                <p>Гарантия качества сборки – 2
+                    года. Возможна расширенная
+                    гарантия до 3 лет.
+                </p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+                    <g transform="translate(71.5 0.5)">
+                        <path
+                                d="M10.25,6h25.5A4.25,4.25,0,0,1,40,10.25v25.5A4.25,4.25,0,0,1,35.75,40H10.25A4.25,4.25,0,0,1,6,35.75V10.25A4.25,4.25,0,0,1,10.25,6Z"
+                                transform="translate(-71)"   stroke="#eb7d00" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="4" />
+                        <path d="M13.5,13.5h9v9h-9Z" transform="translate(-66 5)"
+                              stroke="#eb7d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                        <path d="M13.5,1.5V6" transform="translate(-67.364)"   stroke="#eb7d00"
+                              stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                        <path d="M22.5,1.5V6" transform="translate(-64.636)"   stroke="#eb7d00"
+                              stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                        <path d="M13.5,30v4.5" transform="translate(-67.364 10)"
+                              stroke="#eb7d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                        <path d="M22.5,30v4.5" transform="translate(-64.636 10)"
+                              stroke="#eb7d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                        <path d="M30,13.5h4.5" transform="translate(-61 3.636)"
+                              stroke="#eb7d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                        <path d="M30,21h4.5" transform="translate(-61 5.909)"
+                              stroke="#eb7d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                        <path d="M1.5,13.5H6" transform="translate(-71 3.636)"
+                              stroke="#eb7d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                        <path d="M1.5,21H6" transform="translate(-71 5.909)"
+                              stroke="#eb7d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+                    </g>
+                </svg>
+                <p>
+                    Мощные сборки ПК и
+                    современные комплектующие
+                    от мировых производителей.
+                </p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50.018" height="43" viewBox="0 0 50.018 43">
+                    <path id="Icon_awesome-truck-moving" data-name="Icon awesome-truck-moving" d="M564.389,664.274l-4.57-5.615a4.584,4.584,0,0,0-3.539-1.795h-2.93V647.64a2.827,2.827,0,0,0-2.5-3.071h-32.5a2.827,2.827,0,0,0-2.5,3.071v32.25c0,4.242,2.8,7.679,6.25,7.679a5.962,5.962,0,0,0,5-3.11c.574-1.132,1.417-2.761.482-6.124.253-.006.5-.022.634-.008l22.759.027a9.1,9.1,0,0,0-.125,1.536c0,4.242,2.8,7.679,6.25,7.679s6.25-3.436,6.25-7.679a9.873,9.873,0,0,0-.125-1.536H564.6a1.418,1.418,0,0,0,1.25-1.535v-8.206A6.9,6.9,0,0,0,564.389,664.274ZM522.1,682.962c-1.561,0-2.512-1.593-2.5-3.071a2.791,2.791,0,0,1,2.5-3.072c1.573,0,2.512,1.517,2.5,3.071C524.611,681.4,523.673,682.962,522.1,682.962Zm31.25-21.5h2.93a1.141,1.141,0,0,1,.883.451l3.387,4.156h-7.2Zm3.75,21.5a3.136,3.136,0,1,1,2.5-3.071A2.838,2.838,0,0,1,557.1,682.962Z" transform="translate(-515.838 -644.569)" fill="#eb7d00"/>
+                </svg>
+                <p>
+                    Оперативная доставка по СПб.
+                    Бережная доставка по всей
+                    России со страхованием.
+                </p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+                    <path
+                            d="M10.75,18.813c5.941,0,10.75-4.208,10.75-9.406S16.691,0,10.75,0,0,4.208,0,9.406,4.809,18.813,10.75,18.813Zm0-13.437a4.349,4.349,0,0,1,4.607,4.031,4.349,4.349,0,0,1-4.607,4.031A4.349,4.349,0,0,1,6.143,9.406,4.349,4.349,0,0,1,10.75,5.375Zm21.5,18.813c-5.941,0-10.75,4.208-10.75,9.406S26.309,43,32.25,43,43,38.792,43,33.594,38.191,24.188,32.25,24.188Zm0,13.438a4.349,4.349,0,0,1-4.607-4.031,4.349,4.349,0,0,1,4.607-4.031,4.349,4.349,0,0,1,4.607,4.031A4.349,4.349,0,0,1,32.25,37.625ZM37.654.017,40.687.008C42.549,0,43.653,1.839,42.578,3.183L7.429,42.127a2.411,2.411,0,0,1-1.881.857l-3.206.008c-1.872,0-2.966-1.839-1.891-3.175L35.773.873A2.411,2.411,0,0,1,37.654.017Z"
+                            fill="#eb7c00" />
+                </svg>
+                <p>
+                    Регулярные скидки и акции
+                    на компьютеры и комплектующие
+                </p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+                    <g transform="translate(-22.375 -0.375)">
+                        <path d="M9,29.25H35.269v5.019H9Z" transform="translate(21.74 9.106)" fill="#eb7d00" />
+                        <path
+                                d="M20.723,24.069A3.346,3.346,0,1,0,19.8,17.5L12.828,12.41l-.418.366,5.113,6.975a3.264,3.264,0,0,0-.146.972A3.343,3.343,0,0,0,20.723,24.069Z"
+                                transform="translate(23.191 1.191)" fill="#eb7d00" />
+                        <path
+                                d="M24.875,3.375A21.424,21.424,0,0,0,7.933,38.01h6.078l.413-.412,2.284-2.278-2.367-2.361-2.284,2.268a16.406,16.406,0,0,1-3.638-8.762h3.225v-3.3H8.419A16.406,16.406,0,0,1,12.058,14.4l2.284,2.268,2.367-2.361-2.274-2.278a16.5,16.5,0,0,1,8.786-3.628v3.216h3.308V8.405a16.5,16.5,0,0,1,8.786,3.628l-2.274,2.278,2.367,2.361L37.692,14.4a16.406,16.406,0,0,1,3.638,8.762H38.106v3.3h3.225a16.406,16.406,0,0,1-3.638,8.762l-2.284-2.268-2.367,2.361L35.325,37.6l.413.412h6.078A21.424,21.424,0,0,0,24.875,3.375Z"
+                                transform="translate(19 -3)" fill="#eb7d00" />
+                    </g>
+                </svg>
+                <p>
+                    Каждый собранный ПК
+                    проходит суровое
+                    тестирование. Стресс-тесты
+                    включают в себя разгон
+                    сборки до ее максимальных
+                    значений производительности
+                </p>
+            </div>
+        </div>
+        <div class="fnv-rightAbout">
+            <h3>Serious PC</h3>
+            <hr />
+            <p>SeriousPC – интернет-магазин компьютеров в Санкт-Петербурге.
+                Мы занимаемся профессиональной сборкой компьютеров
+                с учетом требований геймеров, киберспортсменов,
+                графических дизайнеров.
+            </p>
+            <p> Сборки от SeriousPC– это мощные ПК со
+                сбалансированной «начинкой» и оригинальным дизайном корпусов.
+                Мы создаем системы премиум-класса – стильные, эффективные,
+                высоко производительные.
+            </p>
+            <p>В интернет-магазине SeriousPC в продаже представлены сборки
+                компьютеров разных модельных рядов: игровые для геймеров,
+                профессиональные для работы с графикой и
+                деловые для установки в офисе.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+    <footer class="fnv-footer" id="contacts">
+    <div class="fnv-cont">
+        <div class="fnv-menuFooter">
+            <nav>
+                <a href="./index.html">Serious pc</a>
+                <ul>
+                    <li><a href="./index.html#models">Модели</a></li>
+                    <li><a href="./index.html#periphery">Периферия</a></li>
+                    <li><a href="./index.html#stock">Акции</a></li>
+                    <li><a href="./index.html#news">Новости</a></li>
+                    <li><a href="./index.html#contacts">О нас</a></li>
+                </ul>
+            </nav>
+            <p class="fnv-copy">&copy; Serious Pc 2021</p>
+            <p class="fnv-privacy">
+                <a href="#">Политика конфиденциальности</a>
+            </p>
+        </div>
+        <div class="fnv-contactsFooter">
+            <div class="fnv-telBlock">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="33" viewBox="0 0 24 33">
+                    <g transform="translate(-6 -1.5)">
+                        <path d="M10.5,3h15a3,3,0,0,1,3,3V30a3,3,0,0,1-3,3h-15a3,3,0,0,1-3-3V6a3,3,0,0,1,3-3Z"
+
+                              stroke="#eb7d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                        <path d="M18,27h0"   stroke="#eb7d00" stroke-linecap="round" stroke-linejoin="round"
+                              stroke-width="4" />
+                    </g>
+                </svg>
+                <div>
+                    <p>8(812)473-42-23</p>
+                    <p>8(812)473-57-75</p>
+                </div>
+            </div>
+            <div class="fnv-socials">
+                <a href="https://www.youtube.com/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38.4" height="27" viewBox="0 0 38.4 27">
+                        <path
+                                d="M38.648,8.725a4.825,4.825,0,0,0-3.395-3.417c-2.995-.808-15-.808-15-.808s-12.008,0-15,.808A4.825,4.825,0,0,0,1.852,8.725c-.8,3.014-.8,9.3-.8,9.3s0,6.289.8,9.3a4.753,4.753,0,0,0,3.395,3.362c2.995.808,15,.808,15,.808s12.008,0,15-.808a4.753,4.753,0,0,0,3.395-3.362c.8-3.014.8-9.3.8-9.3s0-6.289-.8-9.3ZM16.323,23.737V12.318l10.036,5.71L16.323,23.737Z"
+                                transform="translate(-1.05 -4.5)" />
+                    </svg>
+                </a>
+                <a href="https://vk.com/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37.876" height="22.5" viewBox="0 0 37.876 22.5">
+                        <path
+                                d="M38.32,8.276c.26-.879,0-1.526-1.252-1.526H32.927a1.778,1.778,0,0,0-1.8,1.174A34.7,34.7,0,0,1,26.037,16.4c-.963.963-1.406,1.273-1.934,1.273-.26,0-.661-.309-.661-1.188V8.276c0-1.055-.3-1.526-1.167-1.526H15.764a1,1,0,0,0-1.055.949c0,1,1.491,1.23,1.645,4.043v6.1c0,1.336-.239,1.582-.766,1.582-1.406,0-4.823-5.161-6.848-11.067-.408-1.146-.809-1.61-1.87-1.61H2.728c-1.181,0-1.42.555-1.42,1.174,0,1.1,1.406,6.546,6.546,13.746,3.424,4.915,8.248,7.58,12.635,7.58,2.637,0,2.96-.591,2.96-1.61,0-4.7-.239-5.14,1.083-5.14.612,0,1.666.309,4.127,2.679,2.813,2.813,3.277,4.071,4.852,4.071h4.141c1.181,0,1.779-.591,1.434-1.758-.787-2.454-6.11-7.5-6.349-7.84-.612-.788-.436-1.139,0-1.842.007-.007,5.063-7.123,5.583-9.534Z"
+                                transform="translate(-1.308 -6.75)" />
+                    </svg>
+                </a>
+                <a href="https://web.telegram.org/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31.497" height="26.415" viewBox="0 0 31.497 26.415">
+                        <path
+                                d="M31.409,6.933,26.655,29.348c-.359,1.582-1.294,1.976-2.623,1.23l-7.242-5.337L13.3,28.6a1.819,1.819,0,0,1-1.455.71l.52-7.376L25.784,9.809c.584-.52-.127-.809-.907-.288L8.283,19.969,1.139,17.733c-1.554-.485-1.582-1.554.323-2.3L29.4,4.669c1.294-.485,2.426.288,2,2.264Z"
+                                transform="translate(-0.001 -4.528)" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<!--    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./js/main.mini.js"></script>
+    
+<script src="./js/_mainPage.js"></script>
+
+  </body>
+</html>
